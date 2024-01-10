@@ -1,0 +1,163 @@
+.skill {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+.skill i {
+  margin-right: 1em;
+  font-size: 24px;
+  color: white;
+}
+
+.progress {
+  height: 20px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #007bff;
+  width: 0;
+  transition: width 1s ease-in-out;
+}
+
+.progress-animate {
+  animation: progressAnimation 3s forwards;
+}
+
+@keyframes progressAnimation {
+  from {
+    width: 0;
+  }
+}
+
+
+
+.skill-details {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.skill-name {
+  flex-grow: 1;
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: large;
+}
+
+.skill-percentage {
+  text-align: right;
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.display-3.text-primary.text-uppercase.mb-0{
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.display-2.text-primary.text-uppercase.mb-0{
+  color: rgb(0, 0, 0);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+a.nav-link {
+  float:  left;
+  color: rgb(1, 0, 0);
+  text-align: center;
+  padding: 14px 16px;
+  margin-top: 0px;
+  font-size: 17px;
+  font-style:italic;
+  font-weight: 400;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+a.navbar-brand {
+  color: rgb(0, 0, 0);
+  float: right;
+}
+
+nav.navbar.navbar-expand-lg {
+top: 0;
+z-index: 1000;
+}
+
+@media (max-width: 992px) {
+.navbar-nav {
+  text-align: center; /* Center the links on smaller screens */
+}
+}
+
+@media (max-width: 992px) {
+  .topnav a {
+      float: none;
+      display: block;
+  }
+}
+
+/* 
+.typewriter {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  width: 0;
+  animation: typing 4s steps(20) infinite;
+}
+
+@keyframes typing {
+  from { width: 60% }
+  to { width: 100% }
+}
+
+@keyframes erasing {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 60%;
+  }
+} */
+
+.typewriter h1{
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .05em hidden rgb(255, 255, 255); /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+}
+
+.home{
+  animation: 
+    typing1 6.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+.home2{
+  animation: 
+    typing2 6.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+
+/* The typing effect */
+@keyframes typing1 {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes typing2 {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: rgb(255, 255, 255); }
+}
