@@ -134,13 +134,13 @@ z-index: 1000;
 
 .home{
   animation: 
-    typing1 6.5s steps(40, end),
+    typing1 8.5s steps(40, end),
     blink-caret .75s step-end infinite;
 }
 
 .home2{
   animation: 
-    typing2 6.5s steps(40, end),
+    typing2 8.5s steps(40, end),
     blink-caret .75s step-end infinite;
 }
 
