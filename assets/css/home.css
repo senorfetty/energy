@@ -161,3 +161,10 @@ z-index: 1000;
   from, to { border-color: transparent }
   50% { border-color: rgb(255, 255, 255); }
 }
+
+@media only screen and (max-width: 767px) {
+  .background-color-layer {
+    background-position: center center;
+    background-size: cover;
+  }
+}
