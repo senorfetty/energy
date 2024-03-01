@@ -19,13 +19,14 @@
 
 .progress-bar {
   height: 100%;
-  background-color: #007bff;
+  background: linear-gradient(to right ,blue 0%, rgb(54, 148, 224) 50%,  rgb(24, 246, 38)  100%);
   width: 0;
-  transition: width 1s ease-in-out;
+  transition: width 3s ease-in-out;
+  
 }
 
 .progress-animate {
-  animation: progressAnimation 3s forwards;
+  animation: progressAnimation 4s forwards;
 }
 
 @keyframes progressAnimation {
@@ -33,9 +34,6 @@
     width: 0;
   }
 }
-
-
-
 .skill-details {
   display: flex;
   justify-content: space-between;

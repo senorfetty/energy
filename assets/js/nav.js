@@ -31,3 +31,46 @@ document.getElementById("currentYear").innerHTML = new Date().getFullYear();
 document.addEventListener("DOMContentLoaded", function (event) {
     scrollRevelation('.card');
 });
+
+
+
+
+// function isInViewport(element) {
+//     var rect = element.getBoundingClientRect();
+//     return (
+//         rect.top >= 0 &&
+//         rect.left >= 0 &&
+//         rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+//         rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+//     );
+// }
+
+//   // Function to update the progress bars when they appear in the viewport
+// function updateProgressBars() {
+//     var progressBars = document.querySelectorAll('.progress-bar');
+//     progressBars.forEach(function(progressBar) {
+//         if (isInViewport(progressBar)) {
+//             var skillPercentage = parseInt(progressBar.parentNode.previousElementSibling.querySelector('.skill-percentage').textContent);
+//             progressBar.style.width = skillPercentage + '%';
+//         }
+//     });
+// }
+
+
+// function throttle(func, delay) {
+//     let lastScroll = 0;
+//     return function() {
+//         const currentScroll = window.scrollY;
+//         if (currentScroll - lastScroll < delay) {
+//             return;
+//        }
+//        lastScroll = currentScroll;
+//        func.apply(this, arguments);
+//     };
+// }
+
+
+// window.addEventListener('scroll', throttle(updateProgressBars, 100));
+// window.addEventListener('resize', throttle(updateProgressBars, 100));
+
+// updateProgressBars();
