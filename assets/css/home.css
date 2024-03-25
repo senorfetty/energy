@@ -147,3 +147,14 @@ span {
 }
 
 
+
+.av {  
+  border-radius: 100px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.col-md-8 {
+  margin-left: 10%;
+}
